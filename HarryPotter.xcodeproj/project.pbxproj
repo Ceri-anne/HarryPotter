@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC5891F024C9B1BD0059CFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */; };
 		CC5891F224C9B1BD0059CFA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */; };
-		CC5891F424C9B1BD0059CFA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891F324C9B1BD0059CFA6 /* ViewController.swift */; };
+		CC5891F424C9B1BD0059CFA6 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891F324C9B1BD0059CFA6 /* InitialViewController.swift */; };
 		CC5891F724C9B1BD0059CFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5891F524C9B1BD0059CFA6 /* Main.storyboard */; };
 		CC5891F924C9B1BF0059CFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5891F824C9B1BF0059CFA6 /* Assets.xcassets */; };
 		CC5891FC24C9B1BF0059CFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5891FA24C9B1BF0059CFA6 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,12 @@
 		CC58922124C9C3C70059CFA6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58922024C9C3C70059CFA6 /* API.swift */; };
 		CC58922424C9C3E90059CFA6 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58922324C9C3E90059CFA6 /* House.swift */; };
 		CC58922624C9C7A30059CFA6 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58922524C9C7A30059CFA6 /* NetworkingError.swift */; };
+		CC58932124C9E25B0059CFA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58932024C9E25B0059CFA6 /* Constants.swift */; };
+		CC58932324C9E4C80059CFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58932224C9E4C80059CFA6 /* Character.swift */; };
+		CC58932524C9E6160059CFA6 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58932424C9E6160059CFA6 /* HouseViewController.swift */; };
+		CCA3D60E24C9EA9D006F2872 /* House.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA3D60C24C9EA9D006F2872 /* House.storyboard */; };
+		CCA3D61024C9EB86006F2872 /* Characters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA3D60F24C9EB86006F2872 /* Characters.storyboard */; };
+		CCA3D61324C9EB9B006F2872 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3D61224C9EB9B006F2872 /* CharactersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,7 @@
 		CC5891EC24C9B1BD0059CFA6 /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC5891F324C9B1BD0059CFA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC5891F324C9B1BD0059CFA6 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CC5891F624C9B1BD0059CFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC5891F824C9B1BF0059CFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5891FB24C9B1BF0059CFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +52,12 @@
 		CC58922024C9C3C70059CFA6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CC58922324C9C3E90059CFA6 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		CC58922524C9C7A30059CFA6 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		CC58932024C9E25B0059CFA6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CC58932224C9E4C80059CFA6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		CC58932424C9E6160059CFA6 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		CCA3D60D24C9EA9D006F2872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HarryPotter/Base.lproj/House.storyboard; sourceTree = "<group>"; };
+		CCA3D60F24C9EB86006F2872 /* Characters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Characters.storyboard; sourceTree = "<group>"; };
+		CCA3D61224C9EB9B006F2872 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +102,15 @@
 				CC58922224C9C3D90059CFA6 /* Models */,
 				CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */,
 				CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */,
-				CC5891F324C9B1BD0059CFA6 /* ViewController.swift */,
 				CC58921F24C9C3730059CFA6 /* Networking */,
 				CC5891F524C9B1BD0059CFA6 /* Main.storyboard */,
+				CC5891F324C9B1BD0059CFA6 /* InitialViewController.swift */,
 				CC5891F824C9B1BF0059CFA6 /* Assets.xcassets */,
 				CC5891FA24C9B1BF0059CFA6 /* LaunchScreen.storyboard */,
 				CC5891FD24C9B1BF0059CFA6 /* Info.plist */,
+				CC58932024C9E25B0059CFA6 /* Constants.swift */,
+				CCA3D61124C9EB8E006F2872 /* Characters */,
+				CCA3D60B24C9EA6B006F2872 /* House */,
 			);
 			path = HarryPotter;
 			sourceTree = "<group>";
@@ -123,8 +138,27 @@
 			isa = PBXGroup;
 			children = (
 				CC58922324C9C3E90059CFA6 /* House.swift */,
+				CC58932224C9E4C80059CFA6 /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CCA3D60B24C9EA6B006F2872 /* House */ = {
+			isa = PBXGroup;
+			children = (
+				CC58932424C9E6160059CFA6 /* HouseViewController.swift */,
+				CCA3D60C24C9EA9D006F2872 /* House.storyboard */,
+			);
+			path = House;
+			sourceTree = "<group>";
+		};
+		CCA3D61124C9EB8E006F2872 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				CCA3D60F24C9EB86006F2872 /* Characters.storyboard */,
+				CCA3D61224C9EB9B006F2872 /* CharactersViewController.swift */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +245,8 @@
 				CC5891FC24C9B1BF0059CFA6 /* LaunchScreen.storyboard in Resources */,
 				CC5891F924C9B1BF0059CFA6 /* Assets.xcassets in Resources */,
 				CC5891F724C9B1BD0059CFA6 /* Main.storyboard in Resources */,
+				CCA3D61024C9EB86006F2872 /* Characters.storyboard in Resources */,
+				CCA3D60E24C9EA9D006F2872 /* House.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,13 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5891F424C9B1BD0059CFA6 /* ViewController.swift in Sources */,
+				CC5891F424C9B1BD0059CFA6 /* InitialViewController.swift in Sources */,
 				CC5891F024C9B1BD0059CFA6 /* AppDelegate.swift in Sources */,
 				CC5891F224C9B1BD0059CFA6 /* SceneDelegate.swift in Sources */,
+				CCA3D61324C9EB9B006F2872 /* CharactersViewController.swift in Sources */,
 				CC58922624C9C7A30059CFA6 /* NetworkingError.swift in Sources */,
 				CC58921E24C9B6960059CFA6 /* Networking.swift in Sources */,
+				CC58932524C9E6160059CFA6 /* HouseViewController.swift in Sources */,
 				CC58922424C9C3E90059CFA6 /* House.swift in Sources */,
 				CC58922124C9C3C70059CFA6 /* API.swift in Sources */,
+				CC58932324C9E4C80059CFA6 /* Character.swift in Sources */,
+				CC58932124C9E25B0059CFA6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +311,14 @@
 				CC5891FB24C9B1BF0059CFA6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CCA3D60C24C9EA9D006F2872 /* House.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCA3D60D24C9EA9D006F2872 /* Base */,
+			);
+			name = House.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

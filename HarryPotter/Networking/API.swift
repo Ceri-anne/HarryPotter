@@ -8,9 +8,29 @@ import Foundation
 enum API: String {
 
     case house = "sortingHat"
+    case characters = "characters"
     
     var url: String {
+        
         let baseURL = "https://www.potterapi.com/v1/"
-        return baseURL + self.rawValue
+      
+        var URLPath = baseURL + self.rawValue
+        
+        
+        if apiKeyRequired {
+            URLPath += "?key="
+            URLPath += Constants.apiKey
+        }
+        
+        return URLPath
+    }
+    
+    var apiKeyRequired: Bool {
+        switch self {
+        case .house:
+            return false
+        default:
+            return true
+        }
     }
 }

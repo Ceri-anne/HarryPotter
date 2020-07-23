@@ -50,4 +50,46 @@ class Networking {
         task.resume()
         
     }
+    
+    
+    func fetchCharacters(completionHandler: @escaping ([Character]) -> Void) {
+            
+        guard let url = URL(string: API.characters.url) else {
+            let error = NetworkingError.invalidURL
+            print("🧐 error", error)
+            return
+        }
+        
+        print(url)
+        let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+            
+            if let error = error {
+                print("🧐 Error accessing API", error)
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                      (200...299).contains(httpResponse.statusCode) else {
+                        print("🧐 Error with the response, unexpected status code: ", response!)
+              return
+            }
+                
+            guard let data = data else {
+                print("🧐 Error with data returned from API, invalid data")
+                return
+            }
+            
+            guard let characters = try? JSONDecoder().decode([Character].self, from: data) else {
+                print("🧐 Cannot convert to Characters", data)
+                return
+            }
+
+            completionHandler(characters)
+            
+        })
+        
+        task.resume()
+        
+    }
+    
 }
