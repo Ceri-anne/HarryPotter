@@ -14,6 +14,10 @@
 		CC5891F924C9B1BF0059CFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5891F824C9B1BF0059CFA6 /* Assets.xcassets */; };
 		CC5891FC24C9B1BF0059CFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5891FA24C9B1BF0059CFA6 /* LaunchScreen.storyboard */; };
 		CC58920724C9B1C00059CFA6 /* HarryPotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58920624C9B1C00059CFA6 /* HarryPotterTests.swift */; };
+		CC58921E24C9B6960059CFA6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58921D24C9B6960059CFA6 /* Networking.swift */; };
+		CC58922124C9C3C70059CFA6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58922024C9C3C70059CFA6 /* API.swift */; };
+		CC58922424C9C3E90059CFA6 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58922324C9C3E90059CFA6 /* House.swift */; };
+		CC58922624C9C7A30059CFA6 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58922524C9C7A30059CFA6 /* NetworkingError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		CC58920224C9B1C00059CFA6 /* HarryPotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HarryPotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC58920624C9B1C00059CFA6 /* HarryPotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterTests.swift; sourceTree = "<group>"; };
 		CC58920824C9B1C00059CFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC58921D24C9B6960059CFA6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CC58922024C9C3C70059CFA6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CC58922324C9C3E90059CFA6 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		CC58922524C9C7A30059CFA6 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +87,11 @@
 		CC5891EE24C9B1BD0059CFA6 /* HarryPotter */ = {
 			isa = PBXGroup;
 			children = (
+				CC58922224C9C3D90059CFA6 /* Models */,
 				CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */,
 				CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */,
 				CC5891F324C9B1BD0059CFA6 /* ViewController.swift */,
+				CC58921F24C9C3730059CFA6 /* Networking */,
 				CC5891F524C9B1BD0059CFA6 /* Main.storyboard */,
 				CC5891F824C9B1BF0059CFA6 /* Assets.xcassets */,
 				CC5891FA24C9B1BF0059CFA6 /* LaunchScreen.storyboard */,
@@ -97,6 +107,24 @@
 				CC58920824C9B1C00059CFA6 /* Info.plist */,
 			);
 			path = HarryPotterTests;
+			sourceTree = "<group>";
+		};
+		CC58921F24C9C3730059CFA6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CC58921D24C9B6960059CFA6 /* Networking.swift */,
+				CC58922524C9C7A30059CFA6 /* NetworkingError.swift */,
+				CC58922024C9C3C70059CFA6 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CC58922224C9C3D90059CFA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC58922324C9C3E90059CFA6 /* House.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +231,10 @@
 				CC5891F424C9B1BD0059CFA6 /* ViewController.swift in Sources */,
 				CC5891F024C9B1BD0059CFA6 /* AppDelegate.swift in Sources */,
 				CC5891F224C9B1BD0059CFA6 /* SceneDelegate.swift in Sources */,
+				CC58922624C9C7A30059CFA6 /* NetworkingError.swift in Sources */,
+				CC58921E24C9B6960059CFA6 /* Networking.swift in Sources */,
+				CC58922424C9C3E90059CFA6 /* House.swift in Sources */,
+				CC58922124C9C3C70059CFA6 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
