@@ -11,6 +11,11 @@ class HouseViewController: UIViewController {
     
     var house: House!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Hogwarts House"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()

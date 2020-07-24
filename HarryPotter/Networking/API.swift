@@ -9,6 +9,7 @@ enum API: String {
 
     case house = "sortingHat"
     case characters = "characters"
+    case spells = "spells"
     
     var url: String {
         

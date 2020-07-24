@@ -8,13 +8,15 @@ import UIKit
 class InitialViewController: UIViewController {
 
     @IBAction func chooseHouseTapped(_ sender: Any) {
-        print("fetchHouse")
         fetchHouse()
     }
     
     @IBAction func viewCharacterTapped(_ sender: Any) {
-        print("fetchCharacters")
         fetchCharacters()
+    }
+    
+    @IBAction func viewSpellsTapped(_ sender: Any) {
+        fetchSpells()
     }
     
     private func fetchCharacters() {
@@ -26,6 +28,12 @@ class InitialViewController: UIViewController {
     private func fetchHouse() {
          Networking().fetchHouse() { house in
             self.loadHouseViewController(with: house)
+        }
+    }
+    
+    private func fetchSpells() {
+        Networking().fetchSpells() { spells in
+            self.loadSpellsViewController(with: spells)
         }
     }
     
@@ -44,15 +52,28 @@ class InitialViewController: UIViewController {
     
     private func loadCharactersViewController(with characters: [Character]) {
            
-           DispatchQueue.main.async {
+        DispatchQueue.main.async {
                
-               guard let viewController = UIStoryboard(name: "Characters", bundle: self.nibBundle).instantiateInitialViewController() as? CharactersViewController else {
-                   return
-               }
+            guard let viewController = UIStoryboard(name: "Characters", bundle: self.nibBundle).instantiateInitialViewController() as? CharactersViewController else {
+                return
+            }
                
-               viewController.characters = characters
-               self.navigationController?.pushViewController(viewController , animated: true)
-           }
-       }
+            viewController.characters = characters
+            self.navigationController?.pushViewController(viewController , animated: true)
+        }
+    }
+    
+    private func loadSpellsViewController(with spells: [Spell]) {
+              
+        DispatchQueue.main.async {
+              
+            guard let viewController = UIStoryboard(name: "Spells", bundle: self.nibBundle).instantiateInitialViewController() as? SpellsViewController else {
+                return
+            }
+              
+            viewController.spells = spells
+            self.navigationController?.pushViewController(viewController , animated: true)
+        }
+    }
 }
 

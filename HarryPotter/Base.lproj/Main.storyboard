@@ -16,9 +16,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-EQ-l3N">
-                                <rect key="frame" x="150.5" y="403" width="113" height="90"/>
+                                <rect key="frame" x="150.5" y="373" width="113" height="150"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGg-0T-vRQ" userLabel="View Characters">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGg-0T-vRQ">
                                         <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
                                         <state key="normal" title="Choose House"/>
                                         <connections>
@@ -30,6 +30,13 @@
                                         <state key="normal" title="View Characters"/>
                                         <connections>
                                             <action selector="viewCharacterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFT-mA-wvI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-ym-BZM" userLabel="View Spells">
+                                        <rect key="frame" x="0.0" y="120" width="113" height="30"/>
+                                        <state key="normal" title="View Spells"/>
+                                        <connections>
+                                            <action selector="viewSpellsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5a-mu-K3b"/>
                                         </connections>
                                     </button>
                                 </subviews>

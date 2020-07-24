@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC15F7E324CB291400759D29 /* CharactersDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC15F7E224CB291400759D29 /* CharactersDetailViewController.swift */; };
 		CC5891F024C9B1BD0059CFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */; };
 		CC5891F224C9B1BD0059CFA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */; };
 		CC5891F424C9B1BD0059CFA6 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5891F324C9B1BD0059CFA6 /* InitialViewController.swift */; };
@@ -21,6 +22,9 @@
 		CC58932124C9E25B0059CFA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58932024C9E25B0059CFA6 /* Constants.swift */; };
 		CC58932324C9E4C80059CFA6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58932224C9E4C80059CFA6 /* Character.swift */; };
 		CC58932524C9E6160059CFA6 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC58932424C9E6160059CFA6 /* HouseViewController.swift */; };
+		CC5B18D024CB2DA300B88E81 /* Spells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5B18CF24CB2DA300B88E81 /* Spells.storyboard */; };
+		CC5B18D224CB2DDE00B88E81 /* SpellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B18D124CB2DDE00B88E81 /* SpellsViewController.swift */; };
+		CC5B18D424CB303100B88E81 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B18D324CB303100B88E81 /* Spell.swift */; };
 		CCA3D60E24C9EA9D006F2872 /* House.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA3D60C24C9EA9D006F2872 /* House.storyboard */; };
 		CCA3D61024C9EB86006F2872 /* Characters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA3D60F24C9EB86006F2872 /* Characters.storyboard */; };
 		CCA3D61324C9EB9B006F2872 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3D61224C9EB9B006F2872 /* CharactersViewController.swift */; };
@@ -37,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC15F7E224CB291400759D29 /* CharactersDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailViewController.swift; sourceTree = "<group>"; };
 		CC5891EC24C9B1BD0059CFA6 /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +60,9 @@
 		CC58932024C9E25B0059CFA6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC58932224C9E4C80059CFA6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CC58932424C9E6160059CFA6 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		CC5B18CF24CB2DA300B88E81 /* Spells.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Spells.storyboard; sourceTree = "<group>"; };
+		CC5B18D124CB2DDE00B88E81 /* SpellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsViewController.swift; sourceTree = "<group>"; };
+		CC5B18D324CB303100B88E81 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		CCA3D60D24C9EA9D006F2872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HarryPotter/Base.lproj/House.storyboard; sourceTree = "<group>"; };
 		CCA3D60F24C9EB86006F2872 /* Characters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Characters.storyboard; sourceTree = "<group>"; };
 		CCA3D61224C9EB9B006F2872 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
@@ -99,18 +107,19 @@
 		CC5891EE24C9B1BD0059CFA6 /* HarryPotter */ = {
 			isa = PBXGroup;
 			children = (
-				CC58922224C9C3D90059CFA6 /* Models */,
 				CC5891EF24C9B1BD0059CFA6 /* AppDelegate.swift */,
-				CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */,
+				CC58922224C9C3D90059CFA6 /* Models */,
 				CC58921F24C9C3730059CFA6 /* Networking */,
-				CC5891F524C9B1BD0059CFA6 /* Main.storyboard */,
-				CC5891F324C9B1BD0059CFA6 /* InitialViewController.swift */,
 				CC5891F824C9B1BF0059CFA6 /* Assets.xcassets */,
-				CC5891FA24C9B1BF0059CFA6 /* LaunchScreen.storyboard */,
-				CC5891FD24C9B1BF0059CFA6 /* Info.plist */,
-				CC58932024C9E25B0059CFA6 /* Constants.swift */,
 				CCA3D61124C9EB8E006F2872 /* Characters */,
+				CC58932024C9E25B0059CFA6 /* Constants.swift */,
 				CCA3D60B24C9EA6B006F2872 /* House */,
+				CC5B18CE24CB2D4700B88E81 /* Spells */,
+				CC5891FD24C9B1BF0059CFA6 /* Info.plist */,
+				CC5891F324C9B1BD0059CFA6 /* InitialViewController.swift */,
+				CC5891FA24C9B1BF0059CFA6 /* LaunchScreen.storyboard */,
+				CC5891F524C9B1BD0059CFA6 /* Main.storyboard */,
+				CC5891F124C9B1BD0059CFA6 /* SceneDelegate.swift */,
 			);
 			path = HarryPotter;
 			sourceTree = "<group>";
@@ -138,9 +147,19 @@
 			isa = PBXGroup;
 			children = (
 				CC58922324C9C3E90059CFA6 /* House.swift */,
+				CC5B18D324CB303100B88E81 /* Spell.swift */,
 				CC58932224C9E4C80059CFA6 /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CC5B18CE24CB2D4700B88E81 /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				CC5B18D124CB2DDE00B88E81 /* SpellsViewController.swift */,
+				CC5B18CF24CB2DA300B88E81 /* Spells.storyboard */,
+			);
+			path = Spells;
 			sourceTree = "<group>";
 		};
 		CCA3D60B24C9EA6B006F2872 /* House */ = {
@@ -157,6 +176,7 @@
 			children = (
 				CCA3D60F24C9EB86006F2872 /* Characters.storyboard */,
 				CCA3D61224C9EB9B006F2872 /* CharactersViewController.swift */,
+				CC15F7E224CB291400759D29 /* CharactersDetailViewController.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -247,6 +267,7 @@
 				CC5891F724C9B1BD0059CFA6 /* Main.storyboard in Resources */,
 				CCA3D61024C9EB86006F2872 /* Characters.storyboard in Resources */,
 				CCA3D60E24C9EA9D006F2872 /* House.storyboard in Resources */,
+				CC5B18D024CB2DA300B88E81 /* Spells.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,13 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5B18D424CB303100B88E81 /* Spell.swift in Sources */,
 				CC5891F424C9B1BD0059CFA6 /* InitialViewController.swift in Sources */,
 				CC5891F024C9B1BD0059CFA6 /* AppDelegate.swift in Sources */,
 				CC5891F224C9B1BD0059CFA6 /* SceneDelegate.swift in Sources */,
+				CC5B18D224CB2DDE00B88E81 /* SpellsViewController.swift in Sources */,
 				CCA3D61324C9EB9B006F2872 /* CharactersViewController.swift in Sources */,
 				CC58922624C9C7A30059CFA6 /* NetworkingError.swift in Sources */,
 				CC58921E24C9B6960059CFA6 /* Networking.swift in Sources */,
 				CC58932524C9E6160059CFA6 /* HouseViewController.swift in Sources */,
+				CC15F7E324CB291400759D29 /* CharactersDetailViewController.swift in Sources */,
 				CC58922424C9C3E90059CFA6 /* House.swift in Sources */,
 				CC58922124C9C3C70059CFA6 /* API.swift in Sources */,
 				CC58932324C9E4C80059CFA6 /* Character.swift in Sources */,
